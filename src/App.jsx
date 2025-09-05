@@ -2,51 +2,37 @@ import React from "react";
 
 export default function App() {
     return (
-        <div style={{ fontFamily: "Arial, sans-serif", margin: 0, padding: 0 }}>
+        <div className="font-sans m-0 p-0">
             {/* Hero Section */}
-            <section
-                style={{
-                    background: "linear-gradient(135deg, #1e3c72, #2a5298)",
-                    color: "white",
-                    textAlign: "center",
-                    padding: "60px 20px",
-                }}
-            >
+            <section className="bg-gradient-to-br from-[#1e3c72] to-[#2a5298] text-white text-center py-16 px-5">
                 <img
                     src="https://thafd.bing.com/th/id/OIP.yDnf-zZNGGeEdIkTAMC5sAHaLH?w=208&h=305&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3?text=Book+Cover"
                     alt="Book Cover"
-                    style={{ borderRadius: "8px", marginBottom: "20px" }}
+                    className="rounded-lg mb-5 mx-auto"
                 />
-                <h1 style={{ fontSize: "2.5rem", margin: "10px 0" }}>
+                <h1 className="text-4xl font-bold my-3">
                     Unlock the Secrets to Thriving in the Digital Age
                 </h1>
-                <p style={{ fontSize: "1.2rem", marginBottom: "20px" }}>
+                <p className="text-lg mb-5">
                     A practical guide to mastering digital transformation.
                 </p>
                 <a
                     href="#download"
-                    style={{
-                        background: "orange",
-                        padding: "12px 25px",
-                        borderRadius: "6px",
-                        textDecoration: "none",
-                        color: "white",
-                        fontWeight: "bold",
-                    }}
+                    className="bg-orange-500 px-6 py-3 rounded-md no-underline text-white font-bold"
                 >
                     Download Free Chapter
                 </a>
             </section>
 
             {/* About the Book */}
-            <section style={{ padding: "50px 20px", textAlign: "center" }}>
-                <h2>About the Book</h2>
-                <p style={{ maxWidth: "700px", margin: "10px auto" }}>
-                    *Future Ready: Mastering Digital Transformation* provides insights,
-                    frameworks, and strategies to help professionals and organizations
-                    succeed in today’s fast-changing digital world.
+            <section className="py-12 px-5 text-center">
+                <h2 className="text-2xl font-semibold">About the Book</h2>
+                <p className="max-w-2xl mx-auto my-3">
+                    <em>Future Ready: Mastering Digital Transformation</em> provides
+                    insights, frameworks, and strategies to help professionals and
+                    organizations succeed in today’s fast-changing digital world.
                 </p>
-                <ul style={{ listStyle: "none", padding: 0, marginTop: "20px" }}>
+                <ul className="list-none mt-5 space-y-2">
                     <li>✔ Understand key digital trends</li>
                     <li>✔ Learn proven transformation strategies</li>
                     <li>✔ Discover tools to stay competitive</li>
@@ -55,20 +41,14 @@ export default function App() {
             </section>
 
             {/* Author Section */}
-            <section
-                style={{
-                    background: "#f5f5f5",
-                    padding: "50px 20px",
-                    textAlign: "center",
-                }}
-            >
-                <h2>About the Author</h2>
+            <section className="bg-gray-100 py-12 px-5 text-center">
+                <h2 className="text-2xl font-semibold">About the Author</h2>
                 <img
                     src="https://via.placeholder.com/120.png?text=Author"
                     alt="Author"
-                    style={{ borderRadius: "50%", margin: "20px 0" }}
+                    className="rounded-full my-5 mx-auto"
                 />
-                <p style={{ maxWidth: "600px", margin: "0 auto" }}>
+                <p className="max-w-xl mx-auto">
                     Rohit Sharma is an industry expert in digital strategy and
                     transformation. With years of experience advising startups and global
                     companies, his insights are trusted by professionals worldwide.
@@ -76,12 +56,12 @@ export default function App() {
             </section>
 
             {/* Testimonials */}
-            <section style={{ padding: "50px 20px", textAlign: "center" }}>
-                <h2>What Readers Say</h2>
-                <blockquote style={{ fontStyle: "italic", margin: "20px auto" }}>
+            <section className="py-12 px-5 text-center">
+                <h2 className="text-2xl font-semibold">What Readers Say</h2>
+                <blockquote className="italic my-5">
                     “A must-read for anyone navigating the digital era!” — Jane Doe
                 </blockquote>
-                <blockquote style={{ fontStyle: "italic", margin: "20px auto" }}>
+                <blockquote className="italic my-5">
                     “Practical, insightful, and inspiring.” — John Smith
                 </blockquote>
             </section>
@@ -89,21 +69,11 @@ export default function App() {
             {/* Free Chapter Download Form */}
             <section
                 id="download"
-                style={{
-                    background: "#2a5298",
-                    color: "white",
-                    padding: "50px 20px",
-                    textAlign: "center",
-                }}
+                className="bg-[#2a5298] text-white py-12 px-5 text-center"
             >
-                <h2>Download Your Free Chapter</h2>
+                <h2 className="text-2xl font-semibold">Download Your Free Chapter</h2>
                 <form
-                    style={{
-                        marginTop: "20px",
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                    }}
+                    className="mt-5 flex flex-col items-center"
                     onSubmit={(e) => {
                         e.preventDefault();
                         alert("Thank you! Your free chapter will be sent to your email.");
@@ -113,38 +83,17 @@ export default function App() {
                         type="text"
                         placeholder="Your Name"
                         required
-                        style={{
-                            padding: "10px",
-                            margin: "10px 0",
-                            borderRadius: "5px",
-                            border: "1px solid #ccc",
-                            width: "250px",
-                        }}
+                        className="px-3 py-2 my-2 rounded-md border border-gray-300 w-64 text-black"
                     />
                     <input
                         type="email"
                         placeholder="Your Email"
                         required
-                        style={{
-                            padding: "10px",
-                            margin: "10px 0",
-                            borderRadius: "5px",
-                            border: "1px solid #ccc",
-                            width: "250px",
-                        }}
+                        className="px-3 py-2 my-2 rounded-md border border-gray-300 w-64 text-black"
                     />
                     <button
                         type="submit"
-                        style={{
-                            background: "orange",
-                            color: "white",
-                            padding: "12px 25px",
-                            border: "none",
-                            borderRadius: "6px",
-                            cursor: "pointer",
-                            fontWeight: "bold",
-                            marginTop: "10px",
-                        }}
+                        className="bg-orange-500 text-white px-6 py-3 rounded-md font-bold mt-3"
                     >
                         Get Free Chapter
                     </button>
@@ -152,41 +101,25 @@ export default function App() {
             </section>
 
             {/* Footer */}
-            <footer
-                style={{
-                    background: "#111",
-                    color: "white",
-                    padding: "20px",
-                    textAlign: "center",
-                }}
-            >
+            <footer className="bg-black text-white py-5 text-center">
                 <p>
                     © 2025 Rohit Sharma |{" "}
-                    <a href="#" style={{ color: "orange", textDecoration: "none" }}>
+                    <a href="#" className="text-orange-500 no-underline">
                         Privacy Policy
                     </a>{" "}
                     |{" "}
-                    <a href="#" style={{ color: "orange", textDecoration: "none" }}>
+                    <a href="#" className="text-orange-500 no-underline">
                         Terms
                     </a>
                 </p>
-                <div style={{ marginTop: "10px" }}>
-                    <a
-                        href="#"
-                        style={{ margin: "0 10px", color: "white", textDecoration: "none" }}
-                    >
+                <div className="mt-3">
+                    <a href="#" className="mx-2 text-white no-underline">
                         Facebook
                     </a>
-                    <a
-                        href="#"
-                        style={{ margin: "0 10px", color: "white", textDecoration: "none" }}
-                    >
+                    <a href="#" className="mx-2 text-white no-underline">
                         Twitter
                     </a>
-                    <a
-                        href="#"
-                        style={{ margin: "0 10px", color: "white", textDecoration: "none" }}
-                    >
+                    <a href="#" className="mx-2 text-white no-underline">
                         LinkedIn
                     </a>
                 </div>
