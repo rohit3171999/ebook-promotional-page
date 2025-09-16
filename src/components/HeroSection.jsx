@@ -1,4 +1,4 @@
-export default function herosecton(){
+export default function HeroSection(){
     return (
         <></>
     )
